@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfoli</title>
+    <link rel="stylesheet" href="style/main.css">
+    <style>
+   
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body{
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            color: teal;
+            font-size: 15px;
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        ul li{
+            list-style-type: none;
+            margin: 0.9em;
+            background-color: white;
+        
+        }
+        ul li a{
+            font-size: 1.2em;
+            background-color: white
+        }
+        body>header a:hover{
+            background: none;
+             background-color: white;
+            
+        }
+        a{
+            text-decoration: none;
+        }
+        
+        img{
+            width: 100%;
+            height: auto;
+        }
+        
+        body>header{
+            font-size: 0.95em;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 1.2em;
+            width: 20%;
+            background-color: white;
+        }
+        body>header a{
+            background-color: black
+            padding: 0.2em;
+            color:black;
+            background-color:w;
+        }
+        h1{
+            font-size: 3.0em;
+            margin: 0 0 5em 0;
+            color: teal;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        body>header p{
+            font-size: 1.2em;
+            margin: 1.2em 0 0.5em 0;
+            line-height: 1.2em;
+            background-color: white;
+        }
+        nav{
+            width: 100%;
+            padding: 1.2em 0 0 0;
+        }
+        
+        main{
+            padding: 1em;
+            width: 80%;
+            margin-left: 20%;
+        }
+        main .container{
+            display: grid;
+            grid-gap: 1em;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 200px);
+            justify-content: center;
+            /* background-color: aqua; */
+            background-image: url("https://img.freepik.com/foto-gratis/patron-fondo-abstracto-textura-marmol-negro-diseno_158502-344.jpg?size=626&ext=jpg&ga=GA1.2.2099723351.1639612800");
+            
+        
+        }
+        
+        main. header{
+          background-image: url("wallpapers-80s-pattern.jpg");
+        }
+        main .container div{
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            /* background: cornsilk; */
+        }
+        .container>div{
+            display: flex;  
+            flex-direction: column;
+        }
+        .container header{
+            width: 100%;
+            height: 100%;
+            
+        }
+        main h2{
+            text-align: center;
+        }
+        main a{
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+        main a:hover{
+            color: violet
+            
+        }
+        
+        .e1{
+            grid-column:1/1;
+            grid-row:1/3;
+            background-color: darkslategray;
+        }
+        .e2{
+            grid-column:2/3;
+            grid-row:1/2;
+            background-color: gray
+        }
+        .e3{
+            grid-column:2/3;
+            grid-row:2/3;
+            background-color: grey
+            
+        }
+        .e4{
+            grid-column:3/4;
+            grid-row:1/3;
+            background-color: darkslategray;
+        
+        }
+        .e5{
+            grid-column:4/5;
+            grid-row:1/2;
+            background-color: grey
+        }
+        .e6{
+            grid-column:4/5;
+            grid-row:2/3;
+            background-color: grey
+        }
+        
+        .e7{
+            grid-column:1/6;
+            grid-row:3/4;
+            background-color: darkslategray
+            
+        }
+        
+        .e8{
+            grid-column:3/5;
+            grid-row:3/4;
+            background-color: teal
+        }
+          
+        
+        .e1:hover, .e2:hover, .e3:hover, .e4:hover, .e5:hover, .e6:hover, .e8:hover{
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            background-color: none;
+            box-shadow: 0px 0px 8px palevioletred
+        }
+        .e1:hover{
+            background-image: url('../img/1.png');
+        }
+        .e2:hover{
+            background-image: url('../img/2.png');
+        }
+        .e3:hover{
+            background-image: url('../img/3.png');
+        }
+        .e4:hover{
+            background-image: url('../img/4.png');
+        }
+        .e5:hover{
+            background-image: url('../img/5.png');
+        }
+        .e6:hover{
+            background-image: url('../img/6.png');
+        }
+        .e8:hover{
+            background-image: url('../img/8.png');
+        }
+        
+        
+        @media (max-width: 1024px){
+            body{
+                flex-direction: column;
+            }
+            body>header{
+                position: relative;
+                width: 100%;
+            }
+            main{
+                width: 100%;
+                margin-left: 0;
+            }
+            main .container{
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(6, 200px);
+            }
+            h1{
+                width: 100%;
+                text-align: center;
+                font-size: 3em;
+                margin: 0 0 3em 0;
+            }
+            nav ul{
+                flex-direction: row;
+                justify-content: space-around;
+            }
+            .e1{
+                grid-column:1/2;
+                grid-row:1/3;¨
+                background-color: ;
+            }
+            .e2{
+                grid-column:2/3;
+                grid-row:1/2;
+                background-color: gray
+            }
+            .e3{
+                grid-column:3/4;
+                grid-row:1/3;
+                background-color: darkslategrey
+            }
+            .e4{
+                grid-column:1/2;
+                grid-row:3/4;
+                background-color: gray
+            }
+            .e5{
+                grid-column:2/3;
+                grid-row:2/4;
+                background-color: darkslategrey
+            }
+            .e6{
+                grid-column:3/4;
+                grid-row:3/4;
+                background-color: grey
+            }
+            .e7{
+                grid-column:1/4;
+                grid-row:4/6;
+                background-color: gray
+            }
+            .e8{
+                grid-column:2/5;
+                grid-row:4/6;
+            }
+         
+        }
+        @media (max-width: 600px){
+            body{
+                flex-direction: column;
+            }
+            body>header{
+                position: relative;
+                width: 100%;
+            }
+            main{
+                width: 100%;
+                margin-left: 0;
+            }
+            main .container{
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(9, 200px);
+            }
+            h1{
+                width: 100%;
+                text-align: center;
+                font-size: 3em;
+                margin: 0 0 3em 0;
+            }
+            .e1{
+                grid-column:1/2;
+                grid-row:1/3;
+                background-color: darkslategrey
+            }
+            .e2{
+                grid-column:2/3;
+                grid-row:1/2;
+            }
+            .e3{
+                grid-column:1/2;
+                grid-row:3/4;
+                background-color: grey;
+            }
+            .e4{
+                grid-column:2/3;
+                grid-row:2/4;
+                background-color: darkslategrey
+            }
+            .e5{
+                grid-column:1/2;
+                grid-row:4/5;
+                background-color: darkslategrey
+            }
+            .e6{
+                grid-column:2/3;
+                grid-row:4/5;
+                background-color: grey;
+            }
+            .e7{
+                grid-column:1/4;
+                grid-row:5/6;
+                background-color: darkslategrey
+            }
+            .e8{
+                grid-column:2/3;
+                grid-row:5/7;
+            }
+          
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+        <h1>Porfolio</h1>
+        <p>Espacio web que nos redirecciona a los proyectos realizados en la asignatura de <u>Sistemas de representación avanzada</u> en la <a href="http://www.easdalcoi.es">easdalcoi</a>.</p>
+        <p>Rubén Almendros Gil <a href="mailto:almendrosgr@easdalcoi.es">almendrosgr@easdalcoi.es</a></p>
+        <nav>
+            <ul>
+                <li> <a href="https://www.instagram.com/rubal_____________/">Instagram</a></li>
+                <li> <a href="https://twitter.com/ruben_ag13">Twitter</a></li>
+                <li> <a href="https://github.com/rubenalmendrosg">Github</a></li>
+            </ul>    
+        </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="e1">
+                <header>
+                    <a href="https://rubenalmendrosg.github.io/p1_llocweb_2dg/"><h2>LlocWeb</h2></a>
+                 </header>
+            </div>
+           <div class="e2">
+                <header>
+                    <a href="https://rubenalmendrosg.github.io/p2_llocweb_img_2dg/"><h2>LlocWeb y enlaces</h2></a>
+                </header>
+            </div>
+            <div class="e3">
+                <header>
+                    <a href="https://rubenalmendrosg.github.io/p3_img_audio_video_2dg/"><h2>Recursos Media</h2></a>
+                </header>
+            </div>
+            <div class="e4">
+                <header>
+                    <a href=" https://rubenalmendrosg.github.io/p4_gallery_2dg/"><h2>Flexbox-Gallery</h2></a>      
+                </header>
+            </div>
+            <div class="e5">
+                <header>
+                    <a href="https://rubenalmendrosg.github.io/p5_grid_2dg/"><h2>Grid-Responsive</h2></a>
+                </header>
+            </div>
+            <div class="e6">
+                <header>
+                    <a href="https://rubenalmendrosg.github.io/p6_neoplasticismo_2dg/"> <h2>Neoplasticismo</h2></a>
+                </header>
+            </div>
+            <div class="e7">
+                <header>
+                    <a href="https://rubenalmendrosg.github.io/p7_porfolio_2dg/"><h2>Porfolio</h2></a>  
+                </header>
+            </div>
+            <!-- <div class="e11">element11</div>
+            <div class="e12">element12</div> -->
+        </div>
+    </main>
+</body>
+</html>
